@@ -1,17 +1,10 @@
 [
      {
           "id": 1,
-          "first_name": "Uriel",
-          "last_name": "Ivanyutin",
-          "email": "uivanyutin0@berkeley.edu",
-          "gender": "Male"
-     },
-     {
-          "id": 2,
-          "first_name": "Frasier",
-          "last_name": "Pantry",
-          "email": "fpantry1@usda.gov",
-          "gender": "Male"
+          "first_name": "Suhail",
+          "last_name": "khan",
+          "email": "suhail.khan@gmail.com",
+          "gender": "male"
      },
      {
           "id": 3,
@@ -19,13 +12,6 @@
           "last_name": "khan",
           "email": "suhail.khan@gmail.com",
           "gender": "male"
-     },
-     {
-          "id": 4,
-          "first_name": "Lizzie",
-          "last_name": "Haslam",
-          "email": "lhaslam3@lulu.com",
-          "gender": "Female"
      },
      {
           "id": 6,
@@ -208,5 +194,19 @@
           "email": "mraschs@livejournal.com",
           "gender": "Male",
           "id": 31
+     },
+     {
+          "first_name": "Frasier",
+          "last_name": "Pantry",
+          "email": "fpantry1@usda.gov",
+          "gender": "Male",
+          "id": 31
+     },
+     {
+          "first_name": "zeboo",
+          "last_name": "pathan",
+          "email": "dfantry1@usda.gov",
+          "gender": "Male",
+          "id": 32
      }
 ]

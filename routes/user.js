@@ -18,7 +18,7 @@ router.put('/edit/users/:id', (req, res) => {
      usercontroller.putEditUser(req, res);
 })
 
-router.delete('/delete/users/:id', (req, res) => {
-     usercontroller.deleteUser(req, res);
-})
+// router.delete('/delete/users/:id', (req, res) => {
+//      usercontroller.deleteUser(req, res);
+// })
 module.exports = router;

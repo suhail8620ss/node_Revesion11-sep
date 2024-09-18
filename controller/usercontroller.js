@@ -10,7 +10,7 @@ function getAllUsers(req, res) {
 
 function getUser(req, res) {
      try {
-          let id = parseInt(req.parms.id);
+          let id = parseInt(req.params.id);
           let user = users.find((user) => user.id === id);
           console.log(user);
           res.json(user);
@@ -58,30 +58,30 @@ function putEditUser(req, res) {
      }
 }
 
-function deleteUser(req, res) {
-     try {
-          let id = parseInt(req.params.id);
-          let index = users.findIndex((user) => user.id === id);
-          console.log(index);
-          users.splice(index, 1);
-          res.end("Delete in progress..");
-          fs.writeFile('users.json', JSON.stringify(users), (err) => {
-               if (err) {
-                    console.log(err);
-               } else {
-                    console.log("File has been upadated..................");
-                    res.end("User deleted...................");
-               }
-          })
-     } catch (err) {
-          console.log("err");
-     }
-}
+// function deleteUser(req, res) {
+//      try {
+//           let id = parseInt(req.params.id);
+//           let index = users.findIndex((user) => user.id === id);
+//           console.log(index);
+//           users.splice(index, 1);
+//           res.end("Delete in progress..");
+//           fs.writeFile('users.json', JSON.stringify(users), (err) => {
+//                if (err) {
+//                     console.log(err);
+//                } else {
+//                     console.log("File has been upadated..................");
+//                     res.end("User deleted...................");
+//                }
+//           })
+//      } catch (err) {
+//           console.log("err");
+//      }
+//}
 
 module.exports = {
      getAllUsers,
      getUser,
      addUser,
      putEditUser,
-     deleteUser
+   //  deleteUser
 }
